@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/27441c5198.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/comments.css">
+
+    <title>Reddit - Dive into anything</title>
+  </head>
+  <body class="dark">
+
+    <header>
+      <div class="main">
+        <a class="logo" href="/home">
+          <img src="" alt="logo">
+        </a>
+        <div class="search">
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" placeholder="Search Reddit">
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="user-data">
+          <a class="user-img" href="user image">
+            <img src="" alt="user image">
+          </a>
+          <p class="user-name">basel</p>
+        </div>
+        <div class="options">
+          <div class="drop-btn">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="drop-down">
+            <div class="item color-mode">
+              <i class="fa-regular fa-moon"></i>
+              <div class="content">
+                <span>Dark Mode</span>
+                <div class="mode-switch">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="item logout-btn">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <div class="content">
+                <span>Log Out</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="user-info">
+      <div class="container">
+        <div class="bg"></div>
+        <div class="details">
+          <div class="prof-user-img">
+            <img src="" alt="user image">
+          </div>
+          <p class="prof-user-name"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container">
+        <div class="main-content">
+          <div class="content-title">Your posts</div>
+          <div class="main-container">
+            <div class="posts-section">
+              <div class="posts"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="/js/main.js"></script>
+    <script src="/js/auth/logout.js"></script>
+    <script src="/js/users/getLoggedInUserData.js"></script>
+    <script src="/js/users/getProfileUserData.js"></script>
+    <script src="/js/dom/changeUserImageDom.js"></script>
+    <script src="/js/users/changeUserImage.js"></script>
+    <script src="/js/posts/getProfilePosts.js"></script>
+    <script src="/js/votes/vote.js"></script>
+    <script src="/js/dom/renderASinglePostDom.js"></script>
+    <script src="/js/comments/getAllComments.js"></script>
+    <script src="/js/dom/commentsDom.js"></script>
+    <script src="/js/dom/renderASingleCommentDom.js"></script>
+    <script src="/js/comments/createComment.js"></script>
+  </body>
+</html>

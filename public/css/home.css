@@ -1,0 +1,108 @@
+/* Header User Data */
+header .user-data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .user-data .user-img {
+  width: 30px;
+  height: 30px;
+}
+header .user-data .user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+header .user-data .user-name {
+  font-size: 12px;
+  color: var(--bodyText-color);
+}
+
+/* Main Content */
+.page-content {
+  padding-left: 0;
+}
+.page-content .create-post {
+  background-color: var(--white-color);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.page-content .create-post .user-img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.page-content .create-post .user-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #46d160;
+  border-radius: 50%;
+  outline: 3px solid var(--white-color);
+}
+.page-content .create-post .user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.page-content .create-post input {
+  background-color: var(--inputBg-color);
+  color: var(--bodyText-color);
+  height: 38px;
+  flex: 1;
+  padding: 0 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.page-content .create-post input:hover,
+.page-content .create-post input:focus {
+  border-color: var(--buttonBg-color);
+  outline: none;
+}
+
+/* Create Post */
+.create-post-wrapper .create-post {
+  width: 400px;
+}
+.create-post-wrapper .create-post .post-text {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+.create-post-wrapper .input-group[data-empty='false'] .post-text {
+  padding-top: 17px;
+}
+.create-post-wrapper .post-img {
+  cursor: pointer;
+}
+.create-post-wrapper .post-img::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.create-post-wrapper .post-img::before {
+  content: 'choose image';
+  display: inline-block;
+  background-color: var(--reddit-color);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.create-post-wrapper .post-img:hover::before {
+  border-color: black;
+}
+.create-post-wrapper .post-img:active::before {
+  background: #d73a00;
+}

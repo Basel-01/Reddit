@@ -1,0 +1,46 @@
+.comments-wrapper .comments-element {
+  background-color: var(--white-color);
+  max-width: unset;
+  width: 50%;
+  max-height: 95vh;
+  overflow: hidden;
+}
+.comments-wrapper .comments-container {
+  height: calc(95vh - 200px);
+  overflow-y: scroll;
+}
+.comments-wrapper .comment {
+  border-bottom: 1px solid var(--border-color);
+}
+.comments-wrapper .comment .comment-head {
+  padding-bottom: 0;
+}
+.comments-wrapper .comment .comment-text {
+  color: var(--bodyText-color);
+  padding: 0 15px 15px 30px;
+  font-size: 16px;
+  margin: 0;
+}
+.comments-wrapper form {
+  margin-top: 30px;
+  position: relative;
+}
+.comments-wrapper form .comment-text {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--inputBg-color);
+  color: var(--bodyText-color);
+  width: 100%;
+  height: 75px;
+  padding: 10px 50px 10px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  resize: none;
+}
+.comments-wrapper form i {
+  color: var(--bodyText-color);
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.user-info {
+  padding-top: 51px;
+  color: var(--bodyText-color);
+}
+.user-info .details {
+  display: flex;
+  gap: 45px;
+}
+.user-info .bg {
+  width: 100%;
+  height: 200px;
+  background-color: var(--white-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.user-info .prof-user-img {
+  width: 150px;
+  height: 150px;
+  transform: translate(30px, -70px);
+}
+.user-info .prof-user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bodyText-color);
+}
+.user-info .prof-user-name {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.user-info form {
+  margin: 10px 0 0 auto;
+}
+.user-info form input {
+  display: none;
+}
+.user-info form label {
+  display: block;
+  background: var(--white-color);
+  color: var(--bodyText-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.page-content {
+  padding: 0;
+}
