@@ -523,6 +523,15 @@ header .drop-down .item:last-child {
   border-radius: 5px;
   margin-bottom: 15px;
 }
+.main-content .note {
+  background-color: var(--white-color);
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-weight: bold;
+}
 .main-content .posts-filter .filter {
   color: var(--light-color);
   padding: 5px 10px;
