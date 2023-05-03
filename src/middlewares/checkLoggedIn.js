@@ -8,7 +8,7 @@ const checkLoggedIn = (req, res, next) => {
   } else {
     verifyToken(token)
       .then(() => {
-        res.redirct('/home');
+        res.redirect('/home');
       })
       .catch((err) => {
         res.clearCookie('token');

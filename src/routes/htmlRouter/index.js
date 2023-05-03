@@ -1,9 +1,10 @@
 const htmlRouter = require('express').Router();
 
 const { getHomePage, getProfilePage } = require('../../controllers/htmlController');
+const { checkAuth } = require('../../middlewares');
 
-htmlRouter.get('/home', getHomePage);
+htmlRouter.get('/home', checkAuth, getHomePage);
 
-htmlRouter.get('/user/:username', getProfilePage);
+htmlRouter.get('/user/:username', checkAuth, getProfilePage);
 
 module.exports = htmlRouter;
